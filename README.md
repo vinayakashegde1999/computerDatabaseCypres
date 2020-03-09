@@ -9,13 +9,16 @@ Steps to execute this test suite
 clone this repository 
 
 To install all the dependency run the below command
+
 npm i
 
 To run the test 
 to visualize the test with cypress interactive mode run with below command on the terminal
+
 npm run cy:open
 
 To run in headless/ in background mode run the below command  on the terminal
+
 npm run cy:run
 
 ** Note: Custom reporter is not added in this Repo , please refer the console output / interactive mode for the results ** 
