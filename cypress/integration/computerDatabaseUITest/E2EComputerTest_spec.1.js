@@ -1,6 +1,6 @@
 let databaseName="TestDatabase"+Math.floor(Date.now() / 1000)
 
-describe('Get newly added  Comupter to databse',function(){
+describe('End to end test to vierify the CRUD operations',function(){
     it('Successfully create and delete the computers',function(){
         cy.visit('http://computer-database.herokuapp.com/computers')
         cy.get('.btn.success').click()
