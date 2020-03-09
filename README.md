@@ -32,6 +32,29 @@ On failure   Screenshots captured in /screenshots
 
 /plugins and /support /fixtures is inherited from cypress project initialization and not used at this moment 
 
+Sample test result output
+ (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ✔  computerDatabaseUITest/createComput      00:04        11        -        -        - │
+  │    erTest_spec.js                             │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  computerDatabaseUITest/deleteComput      00:07        11        -        -        - │
+  │    erTest_spec.js                             │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  computerDatabaseUITest/E2EComputerT      00:06        11        -        -        - │
+  │    est_spec.1.js                             │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  computerDatabaseUITest/editComputer      00:05        11        -        -        - │
+  │    Test_spec.js                             │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  computerDatabaseUITest/getComputerT      00:05        11        -        -        - │
+  │    est_spec.js                             │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ✔  All specs passed!                        00:28        5
+
 
 
 
