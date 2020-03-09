@@ -11,7 +11,7 @@ before(function(){
         cy.get(".alert-message.warning").should('include.text',`Done! Computer ${databaseName} has been created`)
 })
 describe('Get newly added  Comupter to databse',function(){
-    it('Successfully add the coputer and retrun to main page',function(){
+    it('search for newly added computer to database on home page',function(){
         cy.get("#searchbox").click().type(databaseName)
         cy.get("#searchsubmit").click('left')
         cy.get(".computers.zebra-striped").find('tbody tr:last').find('td')
