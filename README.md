@@ -34,7 +34,7 @@ On failure   Screenshots captured in /screenshots
 
 Sample test result output
  (Run Finished)
-
+ 
 
        Spec                                              Tests  Passing  Failing  Pending  Skipped
   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
