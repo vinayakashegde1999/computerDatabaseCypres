@@ -14,7 +14,7 @@ describe('Update the Computer database',function(){
         cy.get("#searchsubmit").click()
     })
 
-    it('Successfully edit the computer name and see successful message',function(){
+    it('Successfully edit the computer name and verify success message',function(){
         cy.get(".computers.zebra-striped").find('tbody tr:last').find('td')
         .first().find('a')
         .click()
