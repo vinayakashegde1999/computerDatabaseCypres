@@ -9,7 +9,7 @@ before(function(){
     cy.get('.btn.primary').click()
     cy.get(".alert-message.warning").should('include.text',`Done! Computer ${databaseName} has been created`)
 })
-describe('Get newly added  Computer to database',function(){
+describe('Delete  Computer from database',function(){
     it('Successfully delete the computer and return to main page',function(){
         cy.get("#searchbox").click().type(databaseName)
         cy.get("#searchsubmit").click()
