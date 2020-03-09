@@ -1,7 +1,7 @@
 let databaseName="TestDatabase"+Math.floor(Date.now() / 1000)
 
-describe('Update the Computer database',function(){
-    before(function(){
+describe('Get newly added  Comupter to databse',function(){
+    it('Successfully delete the computer and retrun to main page',function(){
         cy.visit('http://computer-database.herokuapp.com/computers')
         cy.get('.btn.success').click()
         cy.get("#name").click().type(databaseName)
@@ -12,16 +12,11 @@ describe('Update the Computer database',function(){
         cy.get(".alert-message.warning").should('include.text',`Done! Computer ${databaseName} has been created`)
         cy.get("#searchbox").click().type(databaseName)
         cy.get("#searchsubmit").click()
-    })
-
-    it('Successfully edit the computer name and see successful message',function(){
         cy.get(".computers.zebra-striped").find('tbody tr:last').find('td')
         .first().find('a')
         .click()
-        cy.get("#name").click().type("1")
-        cy.get('.btn.primary').click()
-        cy.get(".alert-message.warning").should('include.text',`Done! Computer ${databaseName}1 has been updated`)
-
+        cy.get('.btn.danger').click({force: true});
+        cy.get(".alert-message.warning").should('include.text',` Done! Computer has been deleted`)
     })
 
 });
